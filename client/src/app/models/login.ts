@@ -1,4 +1,4 @@
-export interface tbl_User{
+export interface Usuarios{
     id?:number;
     Usename?:string;
     Password?:string;

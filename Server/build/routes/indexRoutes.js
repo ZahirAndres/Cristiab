@@ -11,12 +11,8 @@ class IndexRoutes {
         this.config();
     }
     config() {
-        this.router.get('/', indexControllers_1.default.index);
-        this.router.post('/validate', indexControllers_1.default.validateUser);
-        this.router.get('/id/:username', indexControllers_1.default.getIdByUsername);
-        this.router.post('/registro', indexControllers_1.default.create);
-        this.router.put('/update/:ID', indexControllers_1.default.update);
-        this.router.delete('/:ID', indexControllers_1.default.delete);
+        this.router.post('/registro', indexControllers_1.default.register);
+        this.router.post('/login', indexControllers_1.default.login);
     }
 }
 const indexRoutes = new IndexRoutes();

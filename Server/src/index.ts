@@ -2,7 +2,7 @@ import express,{Application} from 'express';
 import indexRoutes from './routes/indexRoutes';
 import morgan from 'morgan';
 import cors from 'cors';
-import gamesRoutes from './routes/gamesRoutes';
+
 
 
 
@@ -24,8 +24,8 @@ class Server{
     }
 
     routes():void{
-        this.app.use('/', indexRoutes);
-        this.app.use('/usuario',gamesRoutes);
+        this.app.use('/usuario', indexRoutes);
+        this.app.use('/',indexRoutes);
     }
 
     start():void{
